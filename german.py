@@ -2182,7 +2182,7 @@ while True:
             show_known_unknown_words(known_words, unknown_words)
         mode = show_menu()
     elif mode == '2':
-        df_sentences = pd.read_csv('/home/acasillas/Personal/german-english.tsv', sep='\t', header=None, usecols=[1, 3], names=['german', 'english'])
+        df_sentences = pd.read_csv('/home/acasillas/Personal/german-english-sample.tsv', sep='\t', header=None, usecols=[1, 3], names=['german', 'english'])
 
         pos_colors = {
             "NOUN": "cyan",
@@ -4321,7 +4321,7 @@ while True:
             show_known_unknown_words(known_words, unknown_words)
         mode = show_menu()
     elif mode == '4':
-        df_sentences = pd.read_csv('/home/acasillas/Personal/german-english.tsv', sep='\t', header=None, usecols=[1, 3], names=['german', 'english'])
+        df_sentences = pd.read_csv('/home/acasillas/Personal/german-english-sample.tsv', sep='\t', header=None, usecols=[1, 3], names=['german', 'english'])
 
         pos_colors = {
             "NOUN": "cyan",
@@ -4485,7 +4485,7 @@ while True:
             )
         print()
 
-        df_sentences = pd.read_csv('/home/acasillas/Personal/german-english.tsv', sep='\t', header=None, usecols=[1, 3], names=['german', 'english'])
+        df_sentences = pd.read_csv('/home/acasillas/Personal/german-english-sample.tsv', sep='\t', header=None, usecols=[1, 3], names=['german', 'english'])
 
         pronoun_types = list(german_pronouns.keys())
         cases = ["nominative", "accusative", "dative"] 
@@ -4594,7 +4594,7 @@ while True:
                 print(row)
         print()
 
-        df_sentences = pd.read_csv('/home/acasillas/Personal/german-english.tsv', sep='\t', header=None, usecols=[1, 3], names=['german', 'english'])
+        df_sentences = pd.read_csv('/home/acasillas/Personal/german-english-sample.tsv', sep='\t', header=None, usecols=[1, 3], names=['german', 'english'])
 
         pronoun_types = list(german_pronouns.keys())
         types = ["possessive", "reflexive", "relative", "indefinite"] 
